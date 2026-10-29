@@ -1,0 +1,269 @@
+@import "tailwindcss";
+
+/* Self-hosted, Latin-subset variable fonts */
+@font-face {
+	font-family: "Fraunces";
+	src: url("/fonts/fraunces.woff2") format("woff2");
+	font-weight: 300 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Fraunces";
+	src: url("/fonts/fraunces-italic.woff2") format("woff2");
+	font-weight: 300 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Geist";
+	src: url("/fonts/geist.woff2") format("woff2");
+	font-weight: 400 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Geist Mono";
+	src: url("/fonts/geist-mono.woff2") format("woff2");
+	font-weight: 400 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-display: "Fraunces", Georgia, serif;
+	--font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+	--font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+	--color-ink: #0b0b0e;
+	--color-ink-2: #111116;
+	--color-ink-3: #17171d;
+	--color-paper: #f4f1ea;
+	--color-mist: #b9b5bf;
+	--color-dim: #85818d;
+	--color-line: rgb(255 255 255 / 0.09);
+	--color-rose: #A9515A;
+	--color-rose-deep: #7B353C;
+}
+
+html {
+	background: var(--color-ink);
+	color-scheme: dark;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	margin: 0;
+	background: var(--color-ink);
+	color: var(--color-paper);
+	font-family: var(--font-sans);
+	font-size: 17px;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: rgb(123 53 60 / 0.35);
+	color: #fff;
+}
+
+@layer base {
+	:focus-visible {
+		outline: 2px solid var(--color-rose);
+		outline-offset: 3px;
+		border-radius: 4px;
+	}
+}
+
+.font-display {
+	font-variation-settings: "SOFT" 50;
+	font-optical-sizing: auto;
+}
+
+/* Scroll reveal. Content is visible by default and only hidden once JS
+   has confirmed it can reveal it again. */
+.js .reveal {
+	opacity: 0;
+	transform: translateY(18px);
+	transition:
+		opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+		transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+	transition-delay: var(--delay, 0ms);
+}
+
+.js .reveal.is-in {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.js .reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+}
+
+/* Underline that draws in from the left on hover */
+.link-line {
+	background-image: linear-gradient(currentColor, currentColor);
+	background-size: 0% 1px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.35s ease;
+	padding-bottom: 2px;
+}
+
+.link-line:hover,
+.link-line:focus-visible {
+	background-size: 100% 1px;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #2a2a33 transparent;
+}
+
+.curved-text {
+	font-family: var(--font-display);
+	font-size: 64px;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: -0.01em;
+	fill: var(--color-paper);
+}
+
+.curved-spark {
+	fill: var(--color-rose);
+	font-style: normal;
+	font-size: 40px;
+}
+
+/* React Bits style BlurText: words sharpen into place on load */
+.blur-word {
+	display: inline-block;
+	animation: blur-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+	animation-delay: var(--d, 0ms);
+}
+
+@keyframes blur-in {
+	from {
+		opacity: 0;
+		filter: blur(12px);
+		transform: translateY(0.25em);
+	}
+
+	to {
+		opacity: 1;
+		filter: blur(0);
+		transform: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.blur-word {
+		animation: none;
+	}
+}
+
+/* React Bits style SpotlightCard: a soft light follows the cursor */
+.spotlight {
+	position: relative;
+	isolation: isolate;
+}
+
+.spotlight::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	border-radius: inherit;
+	background: radial-gradient(420px circle at var(--x, 50%) var(--y, -20%),
+		rgb(123 53 60 / 0.15),
+		transparent 60%);
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+.spotlight:hover::before {
+	opacity: 1;
+}
+
+@keyframes nudge {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(4px);
+	}
+}
+
+.nudge {
+	animation: nudge 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.nudge {
+		animation: none;
+	}
+}
+
+.tilt {
+	transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+	transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+	transform-style: preserve-3d;
+	will-change: transform;
+}
+
+.tilt[data-active="true"] {
+	transition-duration: 0.12s;
+}
+
+.tilt-glare {
+	pointer-events: none;
+	position: absolute;
+	inset: 0;
+	border-radius: 1rem;
+	background: radial-gradient(500px circle at var(--gx, 50%) var(--gy, 50%),
+			rgb(255 255 255 / 0.12),
+			transparent 55%);
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+.tilt[data-active="true"] .tilt-glare {
+	opacity: 1;
+}
+
+.panel-in {
+	animation: panel-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes panel-in {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.panel-in {
+		animation: none;
+	}
+}

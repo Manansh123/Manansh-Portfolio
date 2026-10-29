@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 875" width="1400" height="875">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17171d"/>
+      <stop offset="100%" stop-color="#111116"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B353C" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#A9515A" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="barA" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7B353C" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#A9515A" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="barB" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3a3a48" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4a4a5a" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="875" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="175" x2="1400" y2="175"/>
+    <line x1="0" y1="350" x2="1400" y2="350"/>
+    <line x1="0" y1="525" x2="1400" y2="525"/>
+    <line x1="0" y1="700" x2="1400" y2="700"/>
+    <line x1="280" y1="0" x2="280" y2="875"/>
+    <line x1="560" y1="0" x2="560" y2="875"/>
+    <line x1="840" y1="0" x2="840" y2="875"/>
+    <line x1="1120" y1="0" x2="1120" y2="875"/>
+  </g>
+
+  <!-- Top nav bar -->
+  <rect x="60" y="60" width="1280" height="48" rx="8" fill="#1e1e28" fill-opacity="0.9"/>
+  <circle cx="96" cy="84" r="10" fill="#7B353C" fill-opacity="0.7"/>
+  <rect x="120" y="78" width="80" height="12" rx="3" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="220" y="78" width="60" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="300" y="78" width="60" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="1200" y="74" width="100" height="20" rx="10" fill="#7B353C" fill-opacity="0.3"/>
+
+  <!-- Sidebar -->
+  <rect x="60" y="128" width="200" height="687" rx="8" fill="#1a1a24" fill-opacity="0.8"/>
+  <rect x="80" y="156" width="160" height="36" rx="6" fill="url(#accent)"/>
+  <rect x="80" y="204" width="130" height="10" rx="3" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="80" y="228" width="110" height="10" rx="3" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="80" y="252" width="140" height="10" rx="3" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="80" y="276" width="120" height="10" rx="3" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="80" y="316" width="100" height="10" rx="3" fill="#ffffff" fill-opacity="0.06"/>
+  <rect x="80" y="340" width="130" height="10" rx="3" fill="#ffffff" fill-opacity="0.06"/>
+  <rect x="80" y="364" width="115" height="10" rx="3" fill="#ffffff" fill-opacity="0.06"/>
+  <rect x="80" y="404" width="90" height="10" rx="3" fill="#ffffff" fill-opacity="0.06"/>
+  <rect x="80" y="428" width="125" height="10" rx="3" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- Stat cards row -->
+  <rect x="280" y="128" width="253" height="110" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="553" y="128" width="253" height="110" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="826" y="128" width="253" height="110" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="1099" y="128" width="241" height="110" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+
+  <!-- Stat card labels -->
+  <rect x="300" y="148" width="90" height="8" rx="2" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="300" y="168" width="60" height="22" rx="3" fill="#A9515A" fill-opacity="0.8"/>
+  <rect x="300" y="200" width="110" height="8" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+
+  <rect x="573" y="148" width="80" height="8" rx="2" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="573" y="168" width="50" height="22" rx="3" fill="#ffffff" fill-opacity="0.25"/>
+  <rect x="573" y="200" width="100" height="8" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+
+  <rect x="846" y="148" width="95" height="8" rx="2" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="846" y="168" width="45" height="22" rx="3" fill="#ffffff" fill-opacity="0.25"/>
+  <rect x="846" y="200" width="80" height="8" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+
+  <rect x="1119" y="148" width="85" height="8" rx="2" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="1119" y="168" width="55" height="22" rx="3" fill="#ffffff" fill-opacity="0.25"/>
+  <rect x="1119" y="200" width="90" height="8" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Bar chart panel -->
+  <rect x="280" y="258" width="650" height="340" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="300" y="276" width="140" height="10" rx="3" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="300" y="294" width="90" height="8" rx="3" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Bars -->
+  <rect x="320" y="400" width="55" height="160" rx="4" fill="url(#barA)"/>
+  <rect x="400" y="450" width="55" height="110" rx="4" fill="url(#barB)"/>
+  <rect x="480" y="370" width="55" height="190" rx="4" fill="url(#barA)" opacity="0.8"/>
+  <rect x="560" y="420" width="55" height="140" rx="4" fill="url(#barB)" opacity="0.7"/>
+  <rect x="640" y="380" width="55" height="180" rx="4" fill="url(#barA)" opacity="0.9"/>
+  <rect x="720" y="440" width="55" height="120" rx="4" fill="url(#barB)" opacity="0.8"/>
+  <rect x="800" y="360" width="55" height="200" rx="4" fill="url(#barA)"/>
+  <rect x="880" y="430" width="55" height="130" rx="4" fill="url(#barB)" opacity="0.6"/>
+
+  <!-- Chart baseline -->
+  <line x1="300" y1="560" x2="910" y2="560" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Table / employee list panel -->
+  <rect x="950" y="258" width="390" height="340" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="970" y="276" width="120" height="10" rx="3" fill="#ffffff" fill-opacity="0.2"/>
+
+  <!-- Table rows -->
+  <rect x="970" y="308" width="350" height="1" rx="0" fill="#ffffff" fill-opacity="0.07"/>
+  <circle cx="990" cy="332" r="14" fill="#3a3a4a"/>
+  <rect x="1014" y="326" width="100" height="8" rx="2" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="1014" y="340" width="70" height="6" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+  <rect x="1250" y="328" width="60" height="16" rx="8" fill="#7B353C" fill-opacity="0.4"/>
+
+  <rect x="970" y="364" width="350" height="1" rx="0" fill="#ffffff" fill-opacity="0.07"/>
+  <circle cx="990" cy="388" r="14" fill="#3a3a4a"/>
+  <rect x="1014" y="382" width="90" height="8" rx="2" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="1014" y="396" width="75" height="6" rx="2" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="1250" y="384" width="60" height="16" rx="8" fill="#2d4a2d" fill-opacity="0.6"/>
+
+  <rect x="970" y="420" width="350" height="1" rx="0" fill="#ffffff" fill-opacity="0.07"/>
+  <circle cx="990" cy="444" r="14" fill="#3a3a4a"/>
+  <rect x="1014" y="438" width="110" height="8" rx="2" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="1014" y="452" width="65" height="6" rx="2" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="1250" y="440" width="60" height="16" rx="8" fill="#2d4a2d" fill-opacity="0.6"/>
+
+  <rect x="970" y="476" width="350" height="1" rx="0" fill="#ffffff" fill-opacity="0.07"/>
+  <circle cx="990" cy="500" r="14" fill="#3a3a4a"/>
+  <rect x="1014" y="494" width="80" height="8" rx="2" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="1014" y="508" width="90" height="6" rx="2" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="1250" y="496" width="60" height="16" rx="8" fill="#7B353C" fill-opacity="0.4"/>
+
+  <rect x="970" y="532" width="350" height="1" rx="0" fill="#ffffff" fill-opacity="0.07"/>
+  <circle cx="990" cy="556" r="14" fill="#3a3a4a"/>
+  <rect x="1014" y="550" width="95" height="8" rx="2" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="1014" y="564" width="70" height="6" rx="2" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="1250" y="552" width="60" height="16" rx="8" fill="#2d4a2d" fill-opacity="0.6"/>
+
+  <!-- Attendance / donut panel -->
+  <rect x="280" y="618" width="310" height="197" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="300" y="636" width="110" height="10" rx="3" fill="#ffffff" fill-opacity="0.2"/>
+  <!-- Donut -->
+  <circle cx="385" cy="730" r="60" fill="none" stroke="#7B353C" stroke-opacity="0.8" stroke-width="18" stroke-dasharray="283 94"/>
+  <circle cx="385" cy="730" r="60" fill="none" stroke="#3a3a4a" stroke-opacity="0.5" stroke-width="18" stroke-dasharray="94 283" stroke-dashoffset="-283"/>
+  <circle cx="385" cy="730" r="42" fill="#1e1e2e" fill-opacity="0.9"/>
+  <rect x="368" y="723" width="35" height="14" rx="2" fill="#ffffff" fill-opacity="0.2"/>
+
+  <!-- Mini status panel -->
+  <rect x="610" y="618" width="320" height="197" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="630" y="636" width="120" height="10" rx="3" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="630" y="666" width="280" height="8" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="630" y="666" width="200" height="8" rx="2" fill="#7B353C" fill-opacity="0.6"/>
+  <rect x="630" y="690" width="280" height="8" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="630" y="690" width="240" height="8" rx="2" fill="#A9515A" fill-opacity="0.4"/>
+  <rect x="630" y="714" width="280" height="8" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="630" y="714" width="160" height="8" rx="2" fill="#3a5a3a" fill-opacity="0.7"/>
+  <rect x="630" y="738" width="280" height="8" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="630" y="738" width="220" height="8" rx="2" fill="#7B353C" fill-opacity="0.5"/>
+  <rect x="630" y="762" width="280" height="8" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="630" y="762" width="180" height="8" rx="2" fill="#3a5a3a" fill-opacity="0.6"/>
+
+  <!-- Right detail panel -->
+  <rect x="950" y="618" width="390" height="197" rx="8" fill="#1e1e2e" fill-opacity="0.85"/>
+  <rect x="970" y="636" width="100" height="10" rx="3" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="970" y="660" width="350" height="40" rx="6" fill="#ffffff" fill-opacity="0.04"/>
+  <rect x="970" y="710" width="350" height="40" rx="6" fill="#ffffff" fill-opacity="0.04"/>
+  <rect x="970" y="760" width="350" height="40" rx="6" fill="#ffffff" fill-opacity="0.04"/>
+
+  <!-- Label at bottom center -->
+  <text x="700" y="845" font-family="monospace" font-size="13" fill="#ffffff" fill-opacity="0.18" text-anchor="middle" letter-spacing="2">HR MANAGEMENT DASHBOARD · JAVA + MYSQL + JDBC · PLACEHOLDER</text>
+</svg>
+

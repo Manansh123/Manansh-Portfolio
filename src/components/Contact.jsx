@@ -712,7 +712,7 @@ export default function Contact({ onOpenShell }) {
 									<Magnetic>
 										<a
 											href={href || "#"}
-											{...(href ? { target: "_blank", rel: "noreferrer" } : {})}
+											{...(href ? { target: "_blank", rel: "noopener noreferrer" } : {})}
 											className={`${item} ${draw} ${ring}`}
 											title={href ? undefined : `Configure ${name} profile in src/data.js`}
 										>

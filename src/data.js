@@ -2,11 +2,10 @@
 // Everything the site displays lives here for clean maintainability.
 
 export const socialLinks = {
-	// Add your actual profile URLs here:
-	github: "", // e.g. "https://github.com/mananshgupta"
-	linkedin: "", // e.g. "https://linkedin.com/in/mananshgupta"
-	leetcode: "", // e.g. "https://leetcode.com/u/mananshgupta"
-	codolio: "", // e.g. "https://codolio.com/profile/mananshgupta"
+	github: "https://github.com/Manansh123",
+	linkedin: "https://www.linkedin.com/in/manansh-gupta-125215269/",
+	leetcode: "https://leetcode.com/u/manansh123/",
+	codolio: "https://codolio.com/profile/mnu2305",
 };
 
 export const profile = {
@@ -14,7 +13,7 @@ export const profile = {
 	role: "Software Engineering Student · Full Stack Developer · DSA Enthusiast",
 	summary:
 		"Software Engineering student with experience in Java, JavaScript, and full-stack web application development. Strong foundation in Data Structures and Algorithms, Object-Oriented Programming, and database management.",
-	email: "guptamanans@gmail.com",
+	email: "guptamanas@gmail.com",
 	phone: "+91 9170636826",
 	phoneHref: "+919170636826",
 	location: "Greater Noida, Uttar Pradesh, India",
